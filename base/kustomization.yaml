@@ -3,4 +3,5 @@ kind: Kustomization
 namespace: rick-roll
 
 resources:
+  - namespace.yaml
   - deployment.yaml
