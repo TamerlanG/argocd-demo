@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rick-roll
+spec:
+  selector:
+    matchLabels:
+      app: rick-roll
+  template:
+    spec:
+      containers:
+        - name: rick-roll
+          imagePullPolicy: IfNotPresent
+          image: modem7/docker-rickroll
+          ports:
+            - containerPort: 8080
+      restartPolicy: Always
