@@ -7,11 +7,11 @@ spec:
   revisionHistoryLimit: 2
   selector:
     matchLabels:
-      app: rollout-bluegreen
+      app: rick-roll
   template:
     metadata:
       labels:
-        app: rollout-bluegreen
+        app: rick-roll
     spec:
       containers:
         - name: rollouts-demo
