@@ -16,7 +16,7 @@ spec:
       containers:
         - name: rick-roll
           imagePullPolicy: IfNotPresent
-          image: modem7/docker-rickroll
+          image: pengbai/docker-supermario
           ports:
             - containerPort: 8080
       restartPolicy: Always
