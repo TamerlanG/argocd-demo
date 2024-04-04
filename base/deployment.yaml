@@ -9,6 +9,9 @@ spec:
     matchLabels:
       app: rick-roll
   template:
+    metadata:
+      labels:
+        app: rick-roll
     spec:
       containers:
         - name: rick-roll
