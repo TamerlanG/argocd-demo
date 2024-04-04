@@ -10,5 +10,5 @@ spec:
       protocol: TCP
       targetPort: 8080
   selector:
-    app: rick-roll-preview
+    app: rick-roll
   type: ClusterIP
