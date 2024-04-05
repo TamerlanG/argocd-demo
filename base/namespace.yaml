@@ -1,6 +1,4 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: rick-roll
-  labels:
-    name: rick-roll
+  name: mario

@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Rollout
 metadata:
-  name: rollout-rick-roll
+  name: rollout-mario
 spec:
   replicas: 2
   revisionHistoryLimit: 2
