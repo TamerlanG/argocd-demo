@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: rick-roll-preview
+  name: mario-preview-service
 spec:
   ports:
     - port: 80
@@ -9,4 +9,4 @@ spec:
       targetPort: 8080
   selector:
     app: mario
-  type: ClusterIP
+  type: NodePort
