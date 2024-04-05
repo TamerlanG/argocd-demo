@@ -1,0 +1,15 @@
+name: E2E Tests
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      # Run a dummy test
+      - name: Run tests
+        run: |
+          echo "Running dummy tests"
+          # Replace the following line with actual test commands for your project
+          echo "Tests passed!"
