@@ -32,3 +32,6 @@ spec:
           - name: stable-hash
             valueFrom:
               podTemplateHashValue: Stable
+          - name: latest-hash
+            valueFrom:
+              podTemplateHashValue: Latest
