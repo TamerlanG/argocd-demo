@@ -9,3 +9,4 @@ resources:
   - namespace.yaml
   - service.yaml
   - rollout.yaml
+  - preview-service.yaml
