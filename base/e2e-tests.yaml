@@ -1,0 +1,30 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AnalysisTemplate
+metadata:
+  name: e2e-tests
+spec:
+  args:
+    # required in Rollout due to no default value
+    - name: service-name
+    - name: stable-hash
+    - name: latest-hash
+  metrics:
+    - name: test
+      provider:
+        job:
+          spec:
+            backoffLimit: 1
+            template:
+              spec:
+                containers:
+                  - name: api-test
+                    args:
+                      - /bin/sh
+                      - -ec
+                      - |
+                        curl -X POST --http1.1 -H "Accept: application/vnd.github.v3+json" -H "Authorization: token something" ${GITHUB_URL} -d '{"ref":"experiment/run-tests-from-api"}'
+                    env:
+                      - name: GITHUB_URL
+                        value: 'https://api.github.com/repos/tamerlang/argocd-demo/actions/workflows/76448291/dispatches'
+                    image: curlimages/curl:8.4.0
+                restartPolicy: Never

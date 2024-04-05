@@ -10,3 +10,4 @@ resources:
   - service.yaml
   - rollout.yaml
   - preview-service.yaml
+  - e2e-tests.yaml
