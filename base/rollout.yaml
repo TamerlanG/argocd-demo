@@ -28,4 +28,7 @@ spec:
           - templateName: e2e-tests
         args:
           - name: service-name
-            value: preview-svc.default.svc.cluster.local
+            value: mario-service
+          - name: stable-hash
+            valueFrom:
+              podTemplateHashValue: Stable
