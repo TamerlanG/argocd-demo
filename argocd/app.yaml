@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: rollout-application
+  namespace: rollouts
+spec:
+  project: rollout
+  source:
+    repoURL: https://github.com/TamerlanG/argocd-demo
+    targetRevision: HEAD
+    path: base
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: rollouts
