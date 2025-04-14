@@ -3,7 +3,7 @@ kind: Kustomization
 
 labels:
   - pairs:
-      owner: hani
+      owner: tamerlan
 
 resources:
   - namespace.yaml
