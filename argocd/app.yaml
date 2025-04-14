@@ -6,11 +6,11 @@ metadata:
 spec:
   project: rollout
   source:
-    repoURL: 'https://github.com/TamerlanG/argocd-demo'
+    repoURL: "https://github.com/TamerlanG/argocd-demo"
     path: base
-    targetRevision: HEAD
+    targetRevision: main
   destination:
-    server: 'https://kubernetes.default.svc'
+    server: "https://kubernetes.default.svc"
     namespace: rollouts
   syncPolicy:
     automated:

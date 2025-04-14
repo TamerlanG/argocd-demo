@@ -4,8 +4,8 @@ namespace: rollouts
 
 commonLabels:
   app: rollouts
-# resources:
-#   - service.yaml
-#   - rollout.yaml
-#   - preview-service.yaml
-#   - e2e-tests.yaml
+resources:
+  - service.yaml
+  - rollout.yaml
+  - preview-service.yaml
+  - e2e-tests.yaml
