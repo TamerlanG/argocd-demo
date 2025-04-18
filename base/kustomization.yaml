@@ -3,11 +3,8 @@ kind: Kustomization
 
 namespace: argocd-demo
 
-labels:
-  - pairs:
-      owner: tamerlan
-
 resources:
   - namespace.yaml
-  - deployment.yaml
-  - service.yaml
+  - rollout.yaml
+  - rollout-bluegreen-active.yaml
+  - rollout-bluegreen-preview.yaml
