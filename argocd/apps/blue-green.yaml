@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: "https://github.com/TamerlanG/argocd-demo"
-    path: argocd/examples/rollout/blue-green
+    path: argocd/examples/rollouts/blue-green
     targetRevision: main
   destination:
     server: "https://kubernetes.default.svc"
