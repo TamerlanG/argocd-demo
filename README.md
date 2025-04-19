@@ -1,6 +1,6 @@
 # ArgoCD Playground
 
-A simple playground repository for experimenting with ArgoCD and GitOps workflows. This repository contains basic configurations to help you get started with ArgoCD.
+A simple playground repository for experimenting with ArgoCD and GitOps workflows. This repository contains basic configurations to help you get started with ArgoCD, including progressive delivery examples.
 
 ## Getting Started
 
@@ -10,14 +10,9 @@ A simple playground repository for experimenting with ArgoCD and GitOps workflow
    cd argocd-demo
    ```
 
-2. Apply the ArgoCD project configuration:
+2. Create the ArgoCD app for whichever example your interested in.
    ```bash
-   kubectl apply -f argocd/project.yaml
-   ```
-
-3. Create the ArgoCD application:
-   ```bash
-   kubectl apply -f argocd/app.yaml
+   kubectl apply -f argocd/apps/blue-green.yaml
    ```
 
 ## Prerequisites

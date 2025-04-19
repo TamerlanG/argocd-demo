@@ -1,13 +1,13 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: default
+  name: blue-green
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: "https://github.com/TamerlanG/argocd-demo"
-    path: base
+    path: argocd/examples/rollout/blue-green
     targetRevision: main
   destination:
     server: "https://kubernetes.default.svc"
