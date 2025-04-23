@@ -23,6 +23,6 @@ spec:
     blueGreen:
       activeService: rollout-bluegreen-automatic-active
       previewService: rollout-bluegreen-automatic-preview
-      analysis:
+      prePromotionAnalysis:
         templates:
         - templateName: random-fail
