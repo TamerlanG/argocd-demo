@@ -8,3 +8,4 @@ resources:
   - rollout.yaml
   - rollout-bluegreen-active.yaml
   - rollout-bluegreen-preview.yaml
+  - random-fail.yaml
